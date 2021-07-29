@@ -8,14 +8,14 @@ import {
     ServicesH2,
     ServicesP
 } from './ServiceElements';
-import Icon1 from '../../images/svg13.svg';
-import Icon2 from '../../images/svg11.svg';
+import Icon1 from '../../images/svg6.svg';
+import Icon2 from '../../images/svg8.svg';
 import Icon3 from '../../images/svg3.svg';
 
 const Services = () => {
     return (
         <ServicesContainer id="services">
-            <ServicesH1>Our Services</ServicesH1>
+            <ServicesH1>Tokenomics</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />

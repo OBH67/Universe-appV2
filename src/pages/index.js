@@ -4,8 +4,11 @@ import InfoSection from '../components/infoSection';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Services from '../components/Services/index';
-import {homeObjOne, homeObjTwo, homeObjThree} from '../components/infoSection/Data';
+import {homeObjOne, homeObjTwo} from '../components/infoSection/Data';
+import {InfoObjTwo} from '../components/infoPage/Data'
 import Footer from '../components/Footer';
+import InfoPage from '../components/infoPage';
+import TokenomicsPage from '../components/TokenomSection';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +23,8 @@ const Home = () => {
         <Navbar toggle={toggle} />
         <HeroSection />
         <InfoSection {...homeObjOne}/>
-        <InfoSection {...homeObjTwo}/>
-        <Services />
-        <InfoSection {...homeObjThree}/>
+        <InfoPage {...InfoObjTwo} />
+        <TokenomicsPage />
         <Footer />
         </>
     )

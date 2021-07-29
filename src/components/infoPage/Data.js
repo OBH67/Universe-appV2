@@ -1,6 +1,7 @@
-import image from '../../images/svg5.svg';
+import image from '../../images/svg11.svg';
 import image2 from '../../images/svg2.svg';
 import image3 from '../../images/svg7.svg';
+
 
 export const homeObjOne = {
     id: 'about',
@@ -19,17 +20,17 @@ export const homeObjOne = {
     darkText: false
 };
 
-export const homeObjTwo = {
+export const InfoObjTwo = {
     id: 'discover',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Unlimited Access',
-    headline: 'Unlimited Transactions with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-    buttonLabel: 'Learn More',
+    topLine: 'Universe Token',
+    headline: '¿Whats new in Universe Token?',
+    description: 'The Universe Token community can participate in a vote to choose the token they want to obtain as royalties for the benefit of having our token. Allow holders to decide the token they most want.',
+    buttonLabel: 'Get started',
     imgStart: true,
-    img: image2,
+    img: image,
     alt: 'universe',
     dark: true,
     primary: true,

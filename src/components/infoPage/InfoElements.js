@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import image from '../../images/Logo.jpg';
-
+import Uni from '../../images/Uni.jpg'
 
 export const InfoContainer = styled.div`
-height: 900px;
+height: 1000px;
 color: #fff;
 background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 @media screen and (max-width: 768px) {
@@ -36,7 +35,7 @@ grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`
 `;
 
 export const Column1 = styled.div`
-margin-bottom: 15px;
+margin-bottom: -200px;
 padding: 0 15px;
 grid-area: col1;
 `;
@@ -101,62 +100,4 @@ export const Img = styled.img`
 width: 100%;
 margin: 0 0 10px 0;
 padding-right: 0;
-`;
-
-
-export const HeroContainer = styled.div`
-background: #0c0c0c;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 30px;
-height: 957px;
-position: relative;
-z-index: 1;
-`;
-
-export const HeroBg = styled.div`
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-overflow: hidden;
-`;
-
-export const VideoBg = styled.div`
-  /* Location of the image */
-  background-image: url(${image});
-
-  /* Image is centered vertically and horizontally at all times */
-  background-position: center center;
-
-  /* Image doesn't repeat */
-  background-repeat: no-repeat;
-
-  /* This is what makes the background image rescale based on its container's size */
-  background-size: cover;
-
-  /* Pick a solid background color that will be displayed while the background image is loading */
-  background-color:#464646;
-
-  /* SHORTHAND CSS NOTATION
-   * background: url(background-photo.jpg) center center cover no-repeat fixed;
-   */
-   bottom: 40px;
-   margin-top: -30px;
-   height: 1000px;
-`;
-
-export const HeroContent = styled.div`
-z-index: 1;
-top: 50px;
-max-width: 1200px;
-position: absolute;
-padding: 8px 24px;
-display: flex;
-flex-direction: column;
-align-items: center;
 `;

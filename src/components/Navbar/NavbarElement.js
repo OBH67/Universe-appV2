@@ -4,8 +4,9 @@ import {Link as LinkS} from 'react-scroll';
 
 
 export const Nav = styled.nav`
-background: #000;
+background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
 height: 98px;
+margin-top: -100px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -97,23 +98,23 @@ align-items: center;
 }
 `;
 
-export const NavBtnLink = styled(LinkR)`
-border-radius: 50px;
-background: #01bf71;
-white-space: nowrap;
-padding: 10px 22px;
-color: #010606;
-font-size: 16px;
-outline: none;
-border: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
-
-&.hover {
+export const NavBtnLink = styled.button`
+background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+&:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
 `;
 

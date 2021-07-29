@@ -1,32 +1,25 @@
-import React, {useState} from 'react'
-import Video from '../../Videos/universe.mp4';
+import React from 'react'
 import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
-import {Button} from '../ButtonElement';
+import {ButtonHero} from '../ButtonElement';
 
 const HeroSection = () => {
-    const [hover, setHover] = useState(false);
 
-    const onHover = () => {
-        setHover(!hover)
-    }
+async function Connection() {
+    console.log('hello world')
+}
 
     return (
         <HeroContainer id={'home'}>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                <VideoBg />
             </HeroBg>
             <HeroContent>
                 <HeroH1>UNIVERSE TOKEN</HeroH1>
                 <HeroP>
-                    Sign up for a new account today and receive $250 in credit towards your next payment.
+                The best decentralized community on the Binance Smart Chain, join and explore the Universe...
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button
-                    onMouseEnter={onHover}
-                    onMouseLeave={onHover}
-                    to='signup'>
-                        Get started {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button>
+                    <ButtonHero onClick={Connection}>Buy Token</ButtonHero>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

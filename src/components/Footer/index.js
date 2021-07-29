@@ -1,4 +1,21 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, FaTelegram, FaTwitter } from 'react-icons/fa';
+import {
+    FooterContainer, 
+    FooterWrap, 
+    FooterLinksContainer, 
+    FooterLinksWrapper, 
+    FooterLinkItems, 
+    FooterLinkTitle, 
+    FooterLink, 
+    SocialMedia, 
+    SocialMediaWrap,
+    SocialLogo,
+    WebsiteRights, 
+    SocialIcons,
+    SocialIconLink
+    } from './FooterElements';
+
 
 const Footer = () => {
     return (
@@ -31,6 +48,20 @@ const Footer = () => {
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
+                <SocialMedia>
+                    <SocialMediaWrap>
+                        <SocialLogo to='/'>Universe Token</SocialLogo>
+                        <WebsiteRights>
+                            Universe Token {new Date().getFullYear()} All rights reserved.
+                        </WebsiteRights>
+                        <SocialIcons>
+                            <SocialIconLink href='/' target='_black' aria-label='Facebook'><FaFacebook/></SocialIconLink>
+                            <SocialIconLink href='/' target='_black' aria-label='Instagram'><FaInstagram/></SocialIconLink>
+                            <SocialIconLink href='/' target='_black' aria-label='Twitter'><FaTwitter/></SocialIconLink>
+                            <SocialIconLink href='/' target='_black' aria-label='Telegram'><FaTelegram/></SocialIconLink>
+                        </SocialIcons>
+                    </SocialMediaWrap>
+                </SocialMedia>
             </FooterWrap>
         </FooterContainer>
     )
