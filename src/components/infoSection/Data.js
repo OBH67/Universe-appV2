@@ -1,6 +1,4 @@
 import image from '../../images/svg5.svg';
-import image2 from '../../images/svg2.svg';
-import image3 from '../../images/svg7.svg';
 
 export const homeObjOne = {
     id: 'about',
@@ -19,36 +17,29 @@ export const homeObjOne = {
     darkText: false
 };
 
-export const homeObjTwo = {
-    id: 'discover',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Unlimited Access',
-    headline: 'Unlimited Transactions with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-    buttonLabel: 'Learn More',
-    imgStart: true,
-    img: image2,
-    alt: 'universe',
-    dark: true,
-    primary: true,
-    darkText: false
-};
-
-export const homeObjThree = {
-    id: 'services',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Join our Team',
-    headline: 'Creating an account is extremely easy',
-    description: 'Get everything set up and ready in under 10 minutes. All you need to do is add your information and youre ready to go.',
-    buttonLabel: 'Get started',
-    imgStart: false,
-    img: image3,
-    alt: 'universe',
-    dark: true,
-    primary: true,
-    darkText: false
-};
+export const data = {
+    labels: ['Burn', 'Liquidity'],
+    datasets: [
+      {
+        label: '# of Votes',
+        data: [5, 10],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(23, 112, 255, 1)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };

@@ -33,7 +33,10 @@ max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
-color: #fff;
+	text-transform: uppercase;
+    background: linear-gradient(to right, #d10f59 0%, #30CFD0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5rem;
@@ -76,6 +79,20 @@ height: 80px;
 `;
 
 export const NavLinks = styled(LinkS)`
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+
+&.active {
+    border-bottom: 3px solid #01bf71;
+}
+`;
+
+export const LinksNav = styled(LinkR)`
 color: #fff;
 display: flex;
 align-items: center;

@@ -1,16 +1,6 @@
 import styled from 'styled-components';
-import image from '../../images/Logo.jpg';
+import image from '../../images/Logotipo.jpg';
 
-
-export const InfoContainer = styled.div`
-height: 900px;
-color: #fff;
-background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
-@media screen and (max-width: 768px) {
-    padding: 100px 0;
-    height: 1000px;
-}
-`;
 
 export const InfoWrapper = styled.div`
 display: grid;
@@ -72,7 +62,12 @@ margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
-color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
+background: linear-gradient(45deg, #98FB98, #1E90FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
 @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -80,7 +75,7 @@ color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 `;
 
 export const Subtitle = styled.p`
-max-width: 440px;
+max-width: 400px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
@@ -105,7 +100,6 @@ padding-right: 0;
 
 
 export const HeroContainer = styled.div`
-background: #0c0c0c;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -141,6 +135,8 @@ export const VideoBg = styled.div`
 
   /* Pick a solid background color that will be displayed while the background image is loading */
   background-color:#464646;
+
+   background-attachment: fixed;
 
   /* SHORTHAND CSS NOTATION
    * background: url(background-photo.jpg) center center cover no-repeat fixed;

@@ -1,25 +1,11 @@
-import React,{useState, useEffect} from 'react'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElement';
+import React from 'react'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, LinksNav} from './NavbarElement';
 import {FaBars} from 'react-icons/fa';
 
 const Navbar = ({toggle}) => {
-    const [scrollNav, setScrollNav] = useState(false);
-
-    const changeNav = () => {
-        if(window.scrollY >= 80) {
-            setScrollNav(true);
-        } else {
-            setScrollNav(false);
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', changeNav);
-    }, []);
-
     return (
         <>
-        <Nav scrollNav={scrollNav}>
+        <Nav>
             <NavbarContainer>
                 <NavLogo to='/'>Universe Token</NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -34,6 +20,9 @@ const Navbar = ({toggle}) => {
                     </NavItem>
                     <NavItem>
                         <NavLinks to="services">Tokenomics</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                       <LinksNav to='/roadmap'>Roadmap</LinksNav>
                     </NavItem>
                 </NavMenu>
             </NavbarContainer>

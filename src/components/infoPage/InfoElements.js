@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import Uni from '../../images/Uni.jpg'
+import image from '../../images/Logotipo.jpg'
 
 export const InfoContainer = styled.div`
 height: 1000px;
-color: #fff;
-background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 @media screen and (max-width: 768px) {
     padding: 100px 0;
     height: 1000px;
@@ -35,7 +33,7 @@ grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`
 `;
 
 export const Column1 = styled.div`
-margin-bottom: -200px;
+margin-bottom: 90px;
 padding: 0 15px;
 grid-area: col1;
 `;
@@ -71,7 +69,12 @@ margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
-color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
+background: linear-gradient(45deg, #98FB98, #1E90FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
 @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -79,7 +82,7 @@ color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 `;
 
 export const Subtitle = styled.p`
-max-width: 440px;
+max-width: 390px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
@@ -100,4 +103,63 @@ export const Img = styled.img`
 width: 100%;
 margin: 0 0 10px 0;
 padding-right: 0;
+`;
+
+export const HeroContainer = styled.div`
+background-color: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 957px;
+position: relative;
+z-index: 1;
+`;
+
+export const HeroBg = styled.div`
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+`;
+
+export const VideoBg = styled.div`
+  /* Location of the image */
+  background-image: url(${image});
+
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+
+   background-attachment: fixed;
+
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+   bottom: 40px;
+   margin-top: -30px;
+   height: 1000px;
+`;
+
+export const HeroContent = styled.div`
+z-index: 1;
+top: 50px;
+max-width: 1200px;
+position: absolute;
+padding: 8px 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
 `;

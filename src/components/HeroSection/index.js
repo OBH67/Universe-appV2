@@ -1,14 +1,9 @@
 import React from 'react'
-import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
+import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper} from './HeroElements';
 import {ButtonHero} from '../ButtonElement';
 
 const HeroSection = () => {
-
-async function Connection() {
-    console.log('hello world')
-}
-
-    return (
+   return (
         <HeroContainer id={'home'}>
             <HeroBg>
                 <VideoBg />
@@ -19,7 +14,7 @@ async function Connection() {
                 The best decentralized community on the Binance Smart Chain, join and explore the Universe...
                 </HeroP>
                 <HeroBtnWrapper>
-                    <ButtonHero onClick={Connection}>Buy Token</ButtonHero>
+                    <ButtonHero>Buy Token</ButtonHero>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

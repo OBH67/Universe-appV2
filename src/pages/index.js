@@ -3,8 +3,7 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/infoSection';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import Services from '../components/Services/index';
-import {homeObjOne, homeObjTwo} from '../components/infoSection/Data';
+import {homeObjOne} from '../components/infoSection/Data';
 import {InfoObjTwo} from '../components/infoPage/Data'
 import Footer from '../components/Footer';
 import InfoPage from '../components/infoPage';

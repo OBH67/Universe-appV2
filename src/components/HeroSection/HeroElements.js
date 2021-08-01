@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
-import image from '../../images/Logo.jpg'
+import image from '../../images/Logotipo.jpg'
 
 export const HeroContainer = styled.div`
-background: #0c0c0c;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -40,6 +39,8 @@ export const VideoBg = styled.div`
   /* Pick a solid background color that will be displayed while the background image is loading */
   background-color:#464646;
 
+   background-attachment: fixed;
+
   /* SHORTHAND CSS NOTATION
    * background: url(background-photo.jpg) center center cover no-repeat fixed;
    */
@@ -50,25 +51,27 @@ export const VideoBg = styled.div`
 
 export const HeroContent = styled.div`
 z-index: 1;
-top: 300px;
+top: 200px;
 max-width: 1200px;
 position: absolute;
 padding: 8px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
+
+@media screen and (max-width: 768px) {
+    top: 350px;
+}
 `;
 
 export const HeroH1 = styled.h1`
- -webkit-text-stroke-width: 2px;
+ -webkit-text-stroke-width: 3px;
 -webkit-text-stroke-color: #fff;
- background: linear-gradient(45deg, #98FB98, #1E90FF);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    font-size: 94px;
+text-transform: uppercase;
+    background: linear-gradient(to right, #d10f59 0%, #30CFD0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 100px;
     text-align: center;
 
 @media screen and (max-width: 768px) {
@@ -76,11 +79,12 @@ export const HeroH1 = styled.h1`
 }
 
 @media screen and (max-width: 480px) {
-    font-size: 50px;
+    font-size: 100px;
 }
 `;
 
-export const HeroP = styled.p`margin-top: 24px;
+export const HeroP = styled.p`
+margin-top: 24px;
 background: linear-gradient(45deg, #1E90FF, #98FB98);
     background-clip: text;
     -webkit-background-clip: text;
@@ -88,9 +92,9 @@ background: linear-gradient(45deg, #1E90FF, #98FB98);
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
-font-size: 24px;
+font-size: 30px;
 text-align: center;
-max-width: 400px;
+max-width: 500px;
 
 @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -102,7 +106,7 @@ max-width: 400px;
 `;
 
 export const HeroBtnWrapper = styled.div`
-margin-top: 32px;
+margin-top: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
