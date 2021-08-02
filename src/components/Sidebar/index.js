@@ -10,16 +10,13 @@ const Sidebar = ({ isOpen, toggle}) => {
          <SidebarWrapper>
              <SidebarMenu>
                  <SidebarLink onClick={toggle} to='about'>
-                    About
+                    Why Us?
                  </SidebarLink>
                  <SidebarLink onClick={toggle} to='discover'>
                     Discover
                  </SidebarLink>
                  <SidebarLink onClick={toggle} to='services'>
-                    Services
-                 </SidebarLink>
-                 <SidebarLink onClick={toggle} to='signup'>
-                     Sign Up
+                    Tokenomics
                  </SidebarLink>
              </SidebarMenu>
              <SideBtnWrap>

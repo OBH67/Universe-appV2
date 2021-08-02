@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import image from '../../images/Logotipo.jpg';
 
-
 export const InfoWrapper = styled.div`
 display: grid;
 z-index: 1;
@@ -70,7 +69,7 @@ background: linear-gradient(45deg, #98FB98, #1E90FF);
     -moz-text-fill-color: transparent;
 
 @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 48px;
 }
 `;
 

@@ -79,7 +79,7 @@ text-transform: uppercase;
 }
 
 @media screen and (max-width: 480px) {
-    font-size: 100px;
+    font-size: 40px;
 }
 `;
 

@@ -1,4 +1,4 @@
-import image from '../../images/svg11.svg';
+import image from '../../images/vote.svg';
 
 export const InfoObjTwo = {
     id: 'discover',

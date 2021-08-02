@@ -1,9 +1,9 @@
 export const data = {
-    labels: ['Holders', 'Liquidity'],
+    labels: ['Buy Back', 'Marketing', 'Reflexion'],
     datasets: [
       {
-        label: '# of Votes',
-        data: [5, 10],
+        label: 'Buy Back',
+        data: [3, 3, 10],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(23, 112, 255, 1)',

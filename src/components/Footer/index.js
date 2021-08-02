@@ -55,10 +55,10 @@ const Footer = () => {
                             Universe Token {new Date().getFullYear()} All rights reserved.
                         </WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href='/' target='_black' aria-label='Facebook'><FaFacebook/></SocialIconLink>
-                            <SocialIconLink href='/' target='_black' aria-label='Instagram'><FaInstagram/></SocialIconLink>
-                            <SocialIconLink href='/' target='_black' aria-label='Twitter'><FaTwitter/></SocialIconLink>
-                            <SocialIconLink href='/' target='_black' aria-label='Telegram'><FaTelegram/></SocialIconLink>
+                            <SocialIconLink href='https://www.facebook.com/UniverseToken/' target='_black' aria-label='Facebook'><FaFacebook/></SocialIconLink>
+                            <SocialIconLink href='https://www.instagram.com/universetoken/' target='_black' aria-label='Instagram'><FaInstagram/></SocialIconLink>
+                            <SocialIconLink href='https://twitter.com/universe_token' target='_black' aria-label='Twitter'><FaTwitter/></SocialIconLink>
+                            <SocialIconLink href='https://t.me/ut_esp' target='_black' aria-label='Telegram'><FaTelegram/></SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>
                 </SocialMedia>
