@@ -18,7 +18,7 @@ export const homeObjOne = {
 };
 
 export const data = {
-    labels: ['Burn', 'Liquidity'],
+    labels: ['Burn 40%', 'Liquidity 40%'],
     datasets: [
       {
         label: '# of Votes',

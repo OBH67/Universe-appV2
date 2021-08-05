@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button} from '../ButtonElement';
-// import { Doughnut } from 'react-chartjs-2';
-// import {data} from './Data'
+import { Doughnut } from 'react-chartjs-2';
+import {data} from './Data'
 import {useTranslation} from 'react-i18next';
 
 import {
@@ -61,7 +61,7 @@ const InfoPage = ({
                     </TextWrapper>
                     </Column1>
                         <Column2>
-                        {/* Insert component */}
+                    <Doughnut data={data} />
                         </Column2>
                 </InfoRow>
             </InfoWrapper>

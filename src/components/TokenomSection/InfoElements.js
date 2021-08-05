@@ -131,7 +131,7 @@ position: relative;
 z-index: 1;
 
 @media screen and (max-width: 768px) {
-    height: 2400px;
+    height: 2100px;
 }
 `;
 

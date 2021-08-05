@@ -44,7 +44,6 @@ margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col2;
 
-
 @media screen and (max-width: 768px) {
     width: 100%;
 }
@@ -116,6 +115,11 @@ padding: 0 30px;
 height: 957px;
 position: relative;
 z-index: 1;
+
+
+@media screen and (max-width: 768px) {
+    height: 1100px;
+}
 `;
 
 export const HeroBg = styled.div`
@@ -152,7 +156,7 @@ export const VideoBg = styled.div`
    */
    bottom: 40px;
    margin-top: -30px;
-   height: 1000px;
+   height: 1200px;
 `;
 
 export const HeroContent = styled.div`
