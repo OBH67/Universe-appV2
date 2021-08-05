@@ -8,6 +8,8 @@ import {InfoObjTwo} from '../components/infoPage/Data'
 import Footer from '../components/Footer';
 import InfoPage from '../components/infoPage';
 import TokenomicsPage from '../components/TokenomSection';
+import SidebarTranslate from '../components/Translatebar';
+
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +18,18 @@ const Home = () => {
         setIsOpen(!isOpen);
     }
 
+    const [translateOpen, setTranslateOpen] = useState(false);
+
+    const translate = () => {
+        setTranslateOpen(!translateOpen);
+    }
+
+
     return (
         <>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle={toggle} />
+        <Sidebar isOpen={isOpen} toggle={toggle} translate={translate} />
+        <SidebarTranslate translateOpen={translateOpen} translate={translate} />
+        <Navbar toggle={toggle} translate={translate} />
         <HeroSection />
         <InfoSection {...homeObjOne}/>
         <InfoPage {...InfoObjTwo} />

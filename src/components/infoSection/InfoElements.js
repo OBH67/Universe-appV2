@@ -28,12 +28,22 @@ export const Column1 = styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col1;
+
+background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 20px 40px;
 `;
 
 export const Column2 = styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col2;
+
 
 @media screen and (max-width: 768px) {
     width: 100%;
@@ -74,7 +84,7 @@ background: linear-gradient(45deg, #98FB98, #1E90FF);
 `;
 
 export const Subtitle = styled.p`
-max-width: 400px;
+max-width: 700px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
@@ -83,7 +93,7 @@ color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 
 export const BtnWrap = styled.div`
 display: flex;
-justify-content: flex-start;
+justify-content: center;
 `;
 
 export const ImgWrap = styled.div`

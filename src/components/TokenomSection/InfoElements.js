@@ -16,24 +16,47 @@ justify-content: center;
 export const InfoRow = styled.div`
 display: grid;
 grid-auto-columns: minmax(auto, 1fr);
+margin-top: -200px;
 align-items: center;
-grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    margin-top: 100px;
 }
 `;
 
 export const Column1 = styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
-grid-area: col1;
+
+
+background-color: rgba(0,0,0,0.8);
+  border-radius: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 20px 40px;
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+}
 `;
 
 export const Column2 = styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col2;
+
+background-color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 20px 40px;
 
 @media screen and (max-width: 768px) {
     width: 100%;
@@ -108,7 +131,7 @@ position: relative;
 z-index: 1;
 
 @media screen and (max-width: 768px) {
-    height: 1000px;
+    height: 2400px;
 }
 `;
 
@@ -147,11 +170,15 @@ export const VideoBg = styled.div`
    bottom: 40px;
    margin-top: -30px;
    height: 1200px;
+
+   @media screen and (max-width: 768px) {
+    height: 2500px;
+}
 `;
 
 export const HeroContent = styled.div`
 z-index: 1;
-top: 50px;
+top: 120px;
 max-width: 1200px;
 position: absolute;
 padding: 8px 24px;
@@ -161,12 +188,14 @@ align-items: center;
 `;
 
 export const HeroH1 = styled.h1`
- -webkit-text-stroke-width: 3px;
--webkit-text-stroke-color: #fff;
 text-transform: uppercase;
-    background: linear-gradient(to right, #d10f59 0%, #30CFD0 100%);
+    background: linear-gradient(to right, cornflowerblue 0%, #30CFD0 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
 `;
+
+
+
+

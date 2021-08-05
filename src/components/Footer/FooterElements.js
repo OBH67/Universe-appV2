@@ -35,17 +35,23 @@ display: flex;
 export const FooterLinkItems = styled.div`
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 margin: 16px;
 text-align: left;
-width: 160px;
+width: 300px;
 box-sizing: border-box;
 color: #fff;
 
 @media screen and (max-width: 420px) {
     margin: 0;
     padding: 10px;
-    width: 100%;
+    width: 160px;
+}
+
+@media screen and (max-width: 768px) {
+    margin: 0;
+    padding: 10px;
+    width: 160px;
 }
 `;
 

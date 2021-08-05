@@ -1,10 +1,33 @@
 import styled from 'styled-components';
 import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
+import image from '../../images/Logotipo.jpg'
+import {FaGlobeAmericas } from "react-icons/fa";
 
 
 export const Nav = styled.nav`
-background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+ /* Location of the image */
+ background-image: url(${image});
+
+/* Image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Image doesn't repeat */
+background-repeat: no-repeat;
+
+/* This is what makes the background image rescale based on its container's size */
+background-size: cover;
+
+/* Pick a solid background color that will be displayed while the background image is loading */
+background-color:#464646;
+
+ background-attachment: fixed;
+
+/* SHORTHAND CSS NOTATION
+ * background: url(background-photo.jpg) center center cover no-repeat fixed;
+ */
+ bottom: 40px;
+ margin-top: -30px;
 height: 98px;
 margin-top: -100px;
 display: flex;
@@ -20,6 +43,10 @@ z-index: 10;
     height: 80px;
 }
 
+`;
+
+export const Icon = styled(FaGlobeAmericas)`
+color: #fff;
 `;
 
 export const NavbarContainer = styled.div`
@@ -57,10 +84,25 @@ display: none;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
+    
     cursor: pointer;
     color: #fff;
 }
 `;
+
+export const TranslateIcon = styled.div`
+color: #fff;
+display: none;
+    display: block;
+    top: 0;
+    right: -20px;
+    left: -50px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+`;
+
 
 export const NavMenu = styled.ul`
 display: flex;
@@ -76,6 +118,7 @@ margin-right: -22px;
 
 export const NavItem = styled.li`
 height: 80px;
+margin-left: 40px;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -86,6 +129,21 @@ text-decoration: none;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
+
+&.active {
+    border-bottom: 3px solid #01bf71;
+}
+`;
+
+export const TranslateLink = styled(LinkS)`
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+margin-top: 30px;
 
 &.active {
     border-bottom: 3px solid #01bf71;

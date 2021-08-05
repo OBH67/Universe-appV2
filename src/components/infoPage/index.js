@@ -1,4 +1,5 @@
 import React from 'react'
+import {useTranslation} from 'react-i18next';
 import {
     InfoWrapper,
     InfoRow,
@@ -17,19 +18,17 @@ import {
 } from './InfoElements';
 
 
-function InfoPage({
+const InfoPage = ({
     lightBg, 
     id, 
     imgStart, 
     lightText, 
-    headline, 
     darkText, 
-    description,
     img, 
     alt
-    })
+    }) => {
+        const [t] = useTranslation("global");
 
-    {
     return (
         <>
         <HeroContainer lightBg={lightBg} id={id}>
@@ -41,8 +40,8 @@ function InfoPage({
                 <InfoRow imgStart={imgStart}>
                     <Column1>
                     <TextWrapper>
-                        <Heading lightText={lightText}>{headline}</Heading>
-                        <Subtitle darkText={darkText}>{description}</Subtitle>
+                        <Heading lightText={lightText}>{t("infopage.headline")}</Heading>
+                        <Subtitle darkText={darkText}>{t("infopage.description")}</Subtitle>
                     </TextWrapper>
                     </Column1>
                         <Column2>

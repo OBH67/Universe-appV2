@@ -16,26 +16,29 @@ import {
     SocialIconLink
     } from './FooterElements';
 
+    import {useTranslation} from 'react-i18next'
 
 const Footer = () => {
+    const [t] = useTranslation("global");
+
     return (
         <FooterContainer>
             <FooterWrap>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About us</FooterLinkTitle>
-                                <FooterLink>How it works</FooterLink>
-                                <FooterLink>Careers</FooterLink>
-                                <FooterLink>Investors</FooterLink>
-                                <FooterLink>Terms of Service</FooterLink>
+                            <FooterLinkTitle>{t("footer.about")}</FooterLinkTitle>
+                                <FooterLink>{t("footer.works")}</FooterLink>
+                                <FooterLink>{t("footer.carrer")}</FooterLink>
+                                <FooterLink>{t("footer.investor")}</FooterLink>
+                                <FooterLink>{t("footer.terms")}</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Contact us</FooterLinkTitle>
-                                <FooterLink>Contact</FooterLink>
-                                <FooterLink>Support</FooterLink>
-                                <FooterLink>Destinations</FooterLink>
-                                <FooterLink>Sponsorships</FooterLink>
+                            <FooterLinkTitle>{t("footer.contactus")}</FooterLinkTitle>
+                                <FooterLink>{t("footer.contact")}</FooterLink>
+                                <FooterLink>{t("footer.support")}</FooterLink>
+                                <FooterLink>{t("footer.destination")}</FooterLink>
+                                <FooterLink>{t("footer.sponsor")}</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>

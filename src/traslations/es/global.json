@@ -1,0 +1,40 @@
+{
+    "header": {
+        "usermessage": "La mejor comunidad descentralizada en Binance Smart Chain, únete y explora el Universo ...",
+        "button": "Comprar token"
+    },
+    "navbar": {
+        "first-item": "Nosotros",
+        "second-item": "Descubre",
+        "third-item": "Tokenomics",
+        "translate-es": "ES",
+        "translate-eu": "EU",
+        "translate": "ES"
+    },
+    "infopage": {
+        "headline": "¿Qué hay de nuevo en Universe Token?",
+        "description": "La comunidad de Universe Token participará en una votación para elegir el token que quieren obtener como regalías en beneficio de tener nuestro token. Permite a los titulares decidir el token que más desean."
+    },
+    "infosection": {
+        "headline": "¿Por qué invertir en Universe Token?",
+        "description": "Los tokens recaudados del impuesto BuyBack se convierten en BNB y se almacenan de forma segura en nuestro contrato. Este BNB no se puede retirar y se utiliza más tarde para comprar tokens en el mercado abierto y distribuirlos a los titulares de Universe Token.",
+        "button": "Comenzar"
+    },
+    "footer": {
+        "about": "Nosotros",
+        "works": "Como funciona",
+        "carrer": "Carreras",
+        "investor": "Inversionistas",
+        "terms": "Terminos de servicios",
+        "contactus": "Contáctanos",
+        "contact": "Contactar",
+        "support": "Soporte",
+        "destination": "Destino",
+        "sponsor": "Patrocinador"
+    },
+    "languages": {
+        "es": "ESPAÑOL",
+        "eu": "INGLES",
+        "ch": "CHINO"
+    }
+}
